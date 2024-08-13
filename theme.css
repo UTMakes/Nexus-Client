@@ -1,0 +1,97 @@
+/**
+ * @name Custom Transparent Theme
+ * @description A sleek Discord theme with a transparent, blurred background and rounded UI elements.
+ * @version 1.0.0
+ */
+
+:root {
+  --background-image: url('https://your-image-url-here.jpg'); /* Replace with your image URL */
+  --background-blur: 10px; /* Adjust blur amount */
+  --background-opacity: 0.8; /* Adjust opacity */
+  --border-radius: 10px; /* Border radius for roundness */
+  --spacing: 10px; /* Space between elements */
+  --accent-color: #7fdbff; /* Light blue secondary color */
+}
+
+/* Apply the background image with a blur effect */
+.app-3s3AlK::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  filter: blur(var(--background-blur));
+  opacity: var(--background-opacity);
+  z-index: -1; /* Place behind all other content */
+}
+
+/* General UI styling */
+.app-3s3AlK {
+  background-color: rgba(47, 49, 54, 0.5) !important; /* Slightly transparent dark background */
+  border-radius: var(--border-radius) !important;
+  padding: var(--spacing);
+}
+
+/* Sidebar styling */
+.sidebar-2K8pFf {
+  background-color: rgba(47, 49, 54, 0.6) !important;
+  border-radius: var(--border-radius) !important;
+  margin-right: var(--spacing) !important;
+  padding: var(--spacing) !important;
+}
+
+/* Channel list styling */
+.channelList-2QmmxU {
+  background-color: rgba(54, 57, 63, 0.6) !important;
+  border-radius: var(--border-radius) !important;
+  margin-bottom: var(--spacing) !important;
+  padding: var(--spacing) !important;
+}
+
+/* Friends list styling */
+.friendsList-1_2l2z {
+  background-color: rgba(54, 57, 63, 0.6) !important;
+  border-radius: var(--border-radius) !important;
+  padding: var(--spacing) !important;
+  margin-top: var(--spacing) !important;
+}
+
+/* Chat area styling */
+.chat-1F5tZ2 {
+  background-color: rgba(47, 49, 54, 0.6) !important;
+  border-radius: var(--border-radius) !important;
+  padding: var(--spacing) !important;
+  margin-left: var(--spacing) !important;
+}
+
+/* Message holder styling */
+.message-2Cn7pF {
+  background-color: rgba(54, 57, 63, 0.8) !important;
+  border-radius: var(--border-radius) !important;
+  padding: var(--spacing) !important;
+  margin-bottom: var(--spacing) !important;
+}
+
+/* Input fields (chat bar) styling */
+textarea, input {
+  background-color: rgba(64, 68, 75, 0.8) !important;
+  color: #ffffff !important;
+  border: 1px solid #72767d !important;
+  border-radius: var(--border-radius) !important;
+  padding: var(--spacing) !important;
+}
+
+/* Accent color for links and mentions */
+.mention-2JKXf8, .link-1YkE5R {
+  color: var(--accent-color) !important;
+}
+
+/* Additional adjustments for various elements */
+.serverIcon-3-qaFC, .avatar-1BDn8e {
+  border-radius: 50% !important;
+  border: 2px solid var(--accent-color) !important;
+}
