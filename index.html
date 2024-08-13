@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nexus Client - A simple GitHub Page to showcase your projects and share information about yourself.">
     <title>Nexus Client</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f4f8;
+            background-color: #e8f0fe;
             color: #333;
             line-height: 1.6;
         }
         .title-section {
-            background-color: #4a90e2;
+            background-color: #1a73e8;
             color: white;
-            padding: 15px;
+            padding: 30px;
             text-align: center;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
@@ -24,42 +25,44 @@
         .title-section h1 {
             margin: 0;
             font-size: 2.5em;
+            letter-spacing: 1px;
         }
         header {
-            background-color: #4a90e2;
-            color: white;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         main {
             padding: 20px;
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             background-color: white;
             border-radius: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
         footer {
-            background-color: #4a90e2;
+            background-color: #1a73e8;
             color: white;
             text-align: center;
-            padding: 10px 20px;
+            padding: 15px 20px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
+            margin-top: 40px;
             position: relative;
             bottom: 0;
             width: 100%;
         }
         h2 {
-            font-size: 1.5em;
-            color: #4a90e2;
+            font-size: 1.8em;
+            color: #1a73e8;
             margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 5px;
         }
         p {
             margin: 0 0 15px;
+            font-size: 1.1em;
         }
         ul {
             list-style-type: none;
@@ -67,15 +70,28 @@
         }
         li {
             margin: 10px 0;
+            font-size: 1.1em;
         }
         a {
-            color: #4a90e2;
+            color: #1a73e8;
             text-decoration: none;
             border-bottom: 2px solid transparent;
             transition: border-color 0.3s ease;
+            font-weight: bold;
         }
         a:hover {
-            border-bottom: 2px solid #4a90e2;
+            border-bottom: 2px solid #1a73e8;
+        }
+        @media (max-width: 600px) {
+            .title-section h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            p, li {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
@@ -87,13 +103,17 @@
         <h1>Welcome to My GitHub Page</h1>
     </header>
     <main>
-        <h2>About Me</h2>
-        <p>Hello! I'm [Your Name]. This is a simple website hosted on GitHub Pages. You can use this space to showcase your projects, write blog posts, or provide information about yourself.</p>
-        <h2>My Projects</h2>
-        <ul>
-            <li><a href="https://github.com/yourusername/yourproject1" target="_blank">Project 1</a></li>
-            <li><a href="https://github.com/yourusername/yourproject2" target="_blank">Project 2</a></li>
-        </ul>
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! I'm [Your Name]. This is a simple website hosted on GitHub Pages. You can use this space to showcase your projects, write blog posts, or provide information about yourself.</p>
+        </section>
+        <section>
+            <h2>My Projects</h2>
+            <ul>
+                <li><a href="https://github.com/yourusername/yourproject1" target="_blank">Project 1</a></li>
+                <li><a href="https://github.com/yourusername/yourproject2" target="_blank">Project 2</a></li>
+            </ul>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 [Your Name]. All rights reserved.</p>
