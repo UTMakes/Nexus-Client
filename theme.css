@@ -1,7 +1,10 @@
 /**
- * @name Custom Transparent Theme
+ * @name CustomTransparentTheme
+ * @author Anubis
  * @description A sleek Discord theme with a transparent, blurred background and rounded UI elements.
  * @version 1.0.0
+ * @source https://github.com/Anubis/discord-theme
+ * @updateUrl https://raw.githubusercontent.com/Anubis/discord-theme/main/theme.css
  */
 
 :root {
